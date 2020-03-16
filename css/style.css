@@ -36,7 +36,7 @@ h1{
 }
 .home-page{
     min-height: 90vh;
-    background: url(/img/person-holding-barbell-841130.jpg);
+    background-image: url(../img/person-holding-barbell-841130.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -83,3 +83,33 @@ footer{
 .heart{
     color: red;
 }
+.Heading{
+    text-align: center;
+}
+.card {
+    padding: 20px;
+  }
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .Amche-photo{
+    max-width:40%;
+    max-height:40%;
+    object-fit:scale-down;
+    height: 200px;
+    width: 200px;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+  .intro{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    font-weight: lighter;
+  }
