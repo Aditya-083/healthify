@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Healthify</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="home-page1">
+        <div>
+            <h2>Calculate your BMI (body mass index) by using the form below.<h2>
+                <br>
+                <table >
+                    <tr>
+                      <th>BMI</th>
+                      <th>Weight Status</th>
+                      
+                    </tr>
+                    <tr>
+                      <td>Below 18.5</td>
+                      <td>Underweight</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>18.5 – 24.9</td>
+                      <td>Normal or Healthy Weight</td>
+                      
+                    </tr>
+                    <tr>
+                        <td>25.0 – 29.9</td>
+                        <td>Overweight</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>30-plus</td>
+                        <td>Obese</td>
+                    </tr>
+                  </table> 
+            <form action="none" method="post" name="bmiform">
+                <fieldset>
+                <legend>Height and Weight</legend>
+                    <label for="pounds"><h2>Weight (pounds):<h2></label>
+                    <input type="text" name="pounds" id="pounds">
+                    <br>
+                    <label for="inches"><h2>Height (inches):</h2></label>
+                    <input type="text" name="inches" id="inches">
+                    <br>
+                    <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()"><h2>Calculate your BMI</h2></button>
+                </fieldset>
+                <fieldset>
+                <legend>BMI</legend>
+                    <h2><label for="bmi" id="bmi_label">Your calculated BMI is:</label></h2>
+                    <h2><input type="text" name="bmi" id="bmi" readonly="readonly"><h2>
+                </fieldset>
+            </form>
+            <p>Your BMI and Healthy Weight Range.There's no "perfect weight" that fits everyone. BMI, or body mass index, measures how healthy your weight is based on how tall you are. It gives you a clue to your risk for weight-related health problems.</p>
+            
+        </div>
+    </section>
+        
+        <footer>
+            <h2>Made with
+
+                <div class="heart">&#10084;</div>
+            </h2>
+
+            <h2>Healthify &copy;2020</h2>
+        </footer> 
+        <script src="index.js"></script>
+    </body>
+</html>
