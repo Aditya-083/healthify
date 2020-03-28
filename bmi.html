@@ -11,7 +11,25 @@
         <div>
             <h2>Calculate your BMI (body mass index) by using the form below.<h2>
                 <br>
-                <table >
+                
+            <form action="none" method="post" name="bmiform">
+                <fieldset>
+                <legend>Height and Weight</legend>
+                    <label for="pounds"><h2>Weight (kg):<h2></label>
+                    <input type="text" name="pounds" id="pounds">
+                    <br>
+                    <label for="inches"><h2>Height (inches):</h2></label>
+                    <input type="text" name="inches" id="inches">
+                    <br>
+                    <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()"><h2>Calculate your BMI</h2></button>
+                </fieldset>
+                <fieldset>
+                <legend>BMI</legend>
+                    <h2><label for="bmi" id="bmi_label">Your calculated BMI is:</label></h2>
+                    <h2><input type="text" name="bmi" id="bmi" readonly="readonly"><h2>
+                </fieldset>
+                <br>
+                <table class="center">
                     <tr>
                       <th>BMI</th>
                       <th>Weight Status</th>
@@ -37,22 +55,6 @@
                         <td>Obese</td>
                     </tr>
                   </table> 
-            <form action="none" method="post" name="bmiform">
-                <fieldset>
-                <legend>Height and Weight</legend>
-                    <label for="pounds"><h2>Weight (pounds):<h2></label>
-                    <input type="text" name="pounds" id="pounds">
-                    <br>
-                    <label for="inches"><h2>Height (inches):</h2></label>
-                    <input type="text" name="inches" id="inches">
-                    <br>
-                    <button type="button" name="calculate" value="Calculate your BMI" onclick="calcBMI()"><h2>Calculate your BMI</h2></button>
-                </fieldset>
-                <fieldset>
-                <legend>BMI</legend>
-                    <h2><label for="bmi" id="bmi_label">Your calculated BMI is:</label></h2>
-                    <h2><input type="text" name="bmi" id="bmi" readonly="readonly"><h2>
-                </fieldset>
             </form>
             <p>Your BMI and Healthy Weight Range.There's no "perfect weight" that fits everyone. BMI, or body mass index, measures how healthy your weight is based on how tall you are. It gives you a clue to your risk for weight-related health problems.</p>
             
